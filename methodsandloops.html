@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+                var day;
+        switch (new Date().getDay()) {
+            case 0:
+            day = "Sunday, 26th April 2026";
+            break;
+            case 1:
+            day = "Monday, 27th April 2026";
+            break;
+            case 2:
+                day = "Tuesday, 28th April 2026";
+                break;
+            case 3:
+                day = "Wednesday, 29th April";
+                break;
+            case 4:
+                day = "Thursday, 30th April";
+                break;
+            case 5:
+                day = "Friday, 1st May";
+                break;
+            case 6:
+                day = "Saturday, 2nd May"    
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+<script>
+    var str = "Type A Number From 0 To 10";
+    document.write(str.toUpperCase());
+    document.write("<br>");
+    document.write("<br>");
+</script>
+<input type="number" id="num"><br><br>
+<button onclick="showNumber()">Get Number</button>
+
+<p id="demo1"></p>
+
+<script>
+var number = ["5", "24", "47", "39", "67", "96", "53", "72", "106", "81", "18"];
+
+function showNumber() {
+    var n = document.getElementById("num").value;
+    document.getElementById("demo1").innerHTML = number[n];
+}
+</script>
+</body>
+</html>
